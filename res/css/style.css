@@ -7,8 +7,7 @@
 /*------ Reusable Components  ------*/
 .flex-Container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
@@ -163,26 +162,28 @@ a:active {
 }
 .expertise p {
     font-size: 20px;
-    width: 650px;
+    width: 500px;
     color: rgb(255, 255, 255);
 }
 .expertise a::after {
     display: block;
     height: 2px;
     width: 100px;
-    background-color: rgb(255, 255, 255);
     content: "";
     margin-bottom: 10px;
-    transition: width 0.2s, background-color 0.2s;
+    transition: width 0.2s;
 }
+.color-html:after,
 .color-html:hover::after {
     border-bottom: 2px solid #e34f26;
     width: 200px;
 }
+.color-js::after,
 .color-js:hover::after {
     border-bottom: 2px solid #f7df1e;
     width: 200px;
 }
+.color-react:after,
 .color-react:hover::after {
     border-bottom: 2px solid #00d8ff;
     width: 200px;
@@ -197,12 +198,7 @@ a:active {
 }
 .expertise span {
     font-size: 15px;
-    vertical-align: 11.5%;
     font-style: italic;
-}
-.expertise-text {
-    display: flex;
-    flex-direction: column;
 }
 
 /*------ End ------*/
