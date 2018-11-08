@@ -31,8 +31,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../img/joyce-mccown-766501-unsplash.jpg');
-    background-size: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url('../img/Rocket.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,6 +41,10 @@ header h1 {
     color: #fff;
     margin-bottom: 20px;
     font-size: 75px;
+}
+header span {
+    color: rgba(52, 152, 219, 1);
+    font-size: 50%;
 }
 header p {
     color: #fff;
