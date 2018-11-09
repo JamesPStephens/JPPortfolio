@@ -152,49 +152,28 @@ header .btn {
 .expertise {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: #3498db;
+}
+.expertise h2,h3 {
+    font-size: 35px;
 }
 .expertise h1 {
     font-size: 75px;
     color: rgb(255, 255, 255);
 }
-.expertise h2,h3 {
-    font-size: 35px;
-    color: #ffffff;
+.expertise h2 {
+    color:  #e34f26;
+}
+.expertise h3 {
+    color:  #f7df1e;
 }
 .expertise p {
     font-size: 20px;
     max-width: 500px;
     color: #ffffff;
-    margin-top: 30px;
-}
-.expertise a::after {
-    display: block;
-    height: 2px;
-    width: 100px;
-    content: "";
-    margin-bottom: 10px;
-    transition: width 0.2s;
-}
-.color-html:after,
-.color-html:hover::after {
-    border-bottom: 2px solid #e34f26;
-    width: 200px;
-}
-.color-js::after,
-.color-js:hover::after {
-    border-bottom: 2px solid #f7df1e;
-    width: 200px;
-}
-.expertise img {
-    width: 350px;
-    height: 350px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 .expertise span {
     font-size: 15px;
