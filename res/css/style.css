@@ -8,10 +8,31 @@
 .flex-Container {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    min-height: auto;
 }
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
 /*------ End ------*/
 
 /*------ Headings & Paragraphs ------*/
@@ -20,9 +41,35 @@ h1,h2,h3,h4,h5 {
     font-weight: 300;
 }
 p {
-    font-family: 'Krub', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+/*------ End ------*/
+
+/*------ Ahref ------*/
+a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 200;
-    line-height: 32px;
+    line-height: 140%;
+    font-size: 25px;
+}
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:active {
+    color: #ffffff;
+    text-decoration: none;
 }
 /*------ End ------*/
 
@@ -54,48 +101,25 @@ header .btn {
     margin-top: 20px;
     border-radius: 0px;
 }
+
+/* Header buttons */
+
 .fill {
     margin-right: 10px;
-    background-color: rgba(52, 152, 219, 1);
+    background-color: #3498db;
 }
 .fill:hover {
-    background-color: rgba(36, 135, 201, 1);
+    background-color: #2487c9;
 }
 .ghost {
-    border: 1px solid rgba(52, 152, 219, 1);
+    border: 1px solid #3498db;
     margin-right: 10px;
 }
 .ghost:hover {
-    background-color: rgba(52, 152, 219, 1);
+    background-color: #3498db;
 }
 .underline:hover {
-    background-color: rgba(52, 152, 219, 1);
-}
-/*------ End ------*/
-
-/*------ Ahref ------*/
-a {
-    text-decoration: none;
-    font-family: 'Krub', sans-serif;
-    font-weight: 200;
-    line-height: 140%;
-    font-size: 25px;
-}
-a:link {
-    color: rgb(255, 255, 255, 1);
-    text-decoration: none;
-}
-a:visited {
-    color: rgb(255, 255, 255, 1);
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(255, 255, 255, 1);
-    text-decoration: none;
-}
-a:active {
-    color: rgb(255, 255, 255, 1);
-    text-decoration: none;
+    background-color: #3498db;
 }
 /*------ End ------*/
 
@@ -107,59 +131,44 @@ a:active {
     min-height: 100vh;
 }
 .about h1 {
-    margin-top: 25px 0;
+    margin-bottom: 20px;
     font-size: 75px;
-    color: rgba(52, 152, 219, 1); 
+    color: #3498db; 
 }
 .about p {
     font-size: 22px;
-    width: 600px;
-    color: rgb(0, 0, 0);
+    max-width: 600px;
+    color: #1c1e29;
 }
 .about img {
     width: 350px;
     height: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
+
 /*------ End ------*/
 
-/*------ skills Section ------*/
+/*------ Skills Section ------*/
 
 .expertise {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 125vh;
+    min-height: 120vh;
     background-color: #3498db;
 }
 .expertise h1 {
-    margin-top: 25px;
     font-size: 75px;
     color: rgb(255, 255, 255);
 }
-/* Not sure if keeping.
-.expertise h1:after {
-    display: block;
-    height: 2px;
-    width: 100px;
-    background-color: rgb(255, 255, 255);
-    content: "";
-    margin-top: 10px;
-    transition: width 0.2s, background-color 0.2s;
-}
-.expertise h1:hover::after {
-    width: 200px;
-}
-*/
-.expertise h2,h3,h4,h5 {
+.expertise h2,h3 {
     font-size: 35px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 .expertise p {
     font-size: 20px;
-    width: 500px;
-    color: rgb(255, 255, 255);
+    max-width: 500px;
+    color: #ffffff;
+    margin-top: 30px;
 }
 .expertise a::after {
     display: block;
@@ -179,15 +188,10 @@ a:active {
     border-bottom: 2px solid #f7df1e;
     width: 200px;
 }
-.color-react:after,
-.color-react:hover::after {
-    border-bottom: 2px solid #00d8ff;
-    width: 200px;
-}
 .expertise img {
     width: 350px;
     height: 350px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     margin-top: 25px;
     margin-bottom: 25px;
