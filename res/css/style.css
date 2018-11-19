@@ -158,7 +158,7 @@ header p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 75vh;
     background-color: #008cba;
 }
 .expertise h2,h3,h4 {
@@ -187,3 +187,99 @@ header p {
 
 /*------ End ------*/
 
+/*------ Projects Section ------*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150vh;
+    background-color: #FAFAFA;
+}
+.projects h2 {
+    font-weight: 400;
+    font-size: 50px;
+}
+.project-Card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 2px #eaeaea;
+    color: #fff;
+}
+.project-Card ion-icon {
+    color: #fff;
+    font-size: 35px;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+}
+.card-Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100px;
+}
+.card-Description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: 0 10px;
+}
+.card-Social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 35%;
+    margin: 0 32.5%;
+}
+.card-Social ion-icon:hover {
+    color: #008cba;
+    text-decoration: none;
+}
+.card-Image img {
+    width: 200px;
+    height: 200px;
+}
+.onepage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.email {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Rocket.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.react {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/SCPImage.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.react-native {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Rails.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*------ End ------*/
