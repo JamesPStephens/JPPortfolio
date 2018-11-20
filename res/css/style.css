@@ -201,6 +201,15 @@ header p {
     font-weight: 400;
     font-size: 50px;
 }
+.project-List {
+    list-style: none;
+    width: inherit;
+}
+.project-List li {
+    display: block;
+    float: left;
+    margin: 0px 15px;
+}
 .project-Card {
     display: flex;
     flex-direction: column;
@@ -254,28 +263,31 @@ header p {
     text-decoration: none;
 }
 .onepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .email {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .react {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ SCP.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ SCP.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .react-native {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ Rails.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ Rails.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.coming-soon {
+    border: solid 1px rgba(192, 192, 192, 0.5);
 }
 
 /*------ End ------*/
