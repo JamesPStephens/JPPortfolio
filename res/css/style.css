@@ -95,7 +95,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.829)), url('../img/Background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.829)), url('../css/img/Background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -253,30 +253,26 @@ header p {
     color: #008cba;
     text-decoration: none;
 }
-.card-Image img {
-    width: 200px;
-    height: 200px;
-}
 .onepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .email {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Rocket.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .react {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/SCPImage.PNG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ SCP.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .react-native {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Rails.PNG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/img/Portfolio\ Projects\ Card\ -\ Rails.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
