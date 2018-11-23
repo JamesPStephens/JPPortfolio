@@ -3,24 +3,26 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-body,
-html, {
-    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 
+}
+html,
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 /*------ Reusable Components  ------*/
 .flex-Container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: space-between;
-    min-height: auto;
+    align-items: center;
+    width: 100%;
 }
 .flex-Item {
     display: flex;
     flex-flow: column;
-    min-width: 300px;
-    min-height: 200px;
 }
 .container {
     padding-right: 15px;
@@ -48,26 +50,21 @@ html, {
 
 /*------ Headings & Paragraphs ------*/
 h1,h2,h3,h4,h5 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 150%;
-    font-size: 80px;
 }
 p {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 150%;
-    font-size: 24px;
 }
 /*------ End ------*/
 
 /*------ Ahref ------*/
 a {
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 100%;
     line-height: 140%;
-    font-size: 25px;
 }
 a:link {
     color: #fff;
@@ -103,15 +100,13 @@ header {
     min-height: 100vh;
 }
 header h1 {
+    font-size: 300%;
     color: #fff;
-    width: 60%;
-    /* background-color: #186090; */
     padding-left: 1.5%;
 }
 header p {
+    font-size: 100%;
     color: #fff;
-    width: 50%;
-    /* background-color: #186090; */
     padding-left: 1.5%;
 } 
 .discover {
@@ -122,31 +117,32 @@ header p {
     width: inherit;
     bottom: 75px;
 }
+/*------ End ------*/
 
 /*------ About Section ------*/
 .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     min-height: 100vh;
     background-color: #FAFAFA;
 }
 .about h1 {
+    font-size: 300%;
     margin-bottom: 50px;
-    font-size: 75px;
     color: #fff; 
-    width: 50%;
+    width: auto;
     background-color: #1890c0;
     padding-left: 1.5%;
+    max-width: 50vw;
 }
 .about p {
-    font-size: 22px;
-    max-width: 600px;
+    font-size: 100%;
+    max-width: 100%;
     color: #183048;
-}
-.about img {
-    width: 350px;
-    height: auto;
+    max-width: 40vw;
 }
 
 /*------ End ------*/
@@ -156,19 +152,22 @@ header p {
 .expertise {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 75vh;
+    align-content: center;
+    min-height: 100vh;
     background-color: #008cba;
 }
-.expertise h2,h3,h4 {
-    font-weight: 300;
-    font-size: 35px;
-}
 .expertise h1 {
-    margin: 25px 0px;
-    font-size: 75px;
-    color: rgb(255, 255, 255);
+    font-size: 300%;
+    color: #1890c0;
+    max-width: 55vw;
+    background-color: #FAFAFA;
+    padding-left: 1.5%;
+    margin: 25px 0;
+}
+.expertise h2,h3,h4 {
+    font-size: 35px;
+    font-weight: 200;
 }
 .expertise h2 {
     color:  #e34f26;
@@ -180,9 +179,9 @@ header p {
     color: rgb(255, 255, 255);
 }
 .expertise p {
-    font-size: 20px;
-    max-width: 500px;
+    font-size: 100%;
     color: #ffffff;
+    max-width: 40vw;
 }
 
 /*------ End ------*/
@@ -192,10 +191,22 @@ header p {
 .projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-content: center;
     min-height: 150vh;
     background-color: #FAFAFA;
+}
+.projects h1 {
+    font-size: 75px;
+    color: #fff; 
+    width: 40vw;
+    background-color: #1890c0;
+    padding-left: 1.5%;
+}
+.projects p {
+    font-size: 22px;
+    width: 50vw;
+    color: #183048;
 }
 .projects h2 {
     font-weight: 400;
