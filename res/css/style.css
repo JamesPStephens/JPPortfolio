@@ -13,17 +13,6 @@ body {
     font-size: 20px;
 }
 /*------ Reusable Components  ------*/
-.flex-Container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.flex-Item {
-    display: flex;
-    flex-flow: column;
-}
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -45,7 +34,17 @@ body {
       width: 1170px;
     }
   }
-
+.flex-Container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-Item {
+    display: flex;
+    flex-flow: column;
+    max-width: 40vw;
+}
 /*------ End ------*/
 
 /*------ Headings & Paragraphs ------*/
@@ -136,13 +135,11 @@ header p {
     width: auto;
     background-color: #1890c0;
     padding-left: 1.5%;
-    max-width: 50vw;
 }
 .about p {
     font-size: 100%;
     max-width: 100%;
     color: #183048;
-    max-width: 40vw;
 }
 
 /*------ End ------*/
