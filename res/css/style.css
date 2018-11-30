@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 
 }
 html,
@@ -43,7 +42,7 @@ body {
 .flex-Item {
     display: flex;
     flex-flow: column;
-    max-width: 40vw;
+    justify-content: center;
 }
 /*------ End ------*/
 
@@ -125,63 +124,23 @@ header p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    max-width: 100vw;
     min-height: 100vh;
     background-color: #FAFAFA;
 }
 .about h1 {
     font-size: 300%;
     margin-bottom: 50px;
-    color: #fff; 
-    width: auto;
-    background-color: #1890c0;
-    padding-left: 1.5%;
+    color: #1890c0; 
 }
 .about p {
     font-size: 100%;
-    max-width: 100%;
     color: #183048;
 }
 
 /*------ End ------*/
 
-/*------ Skills Section ------*/
 
-.expertise {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    background-color: #008cba;
-}
-.expertise h1 {
-    font-size: 300%;
-    color: #1890c0;
-    max-width: 55vw;
-    background-color: #FAFAFA;
-    padding-left: 1.5%;
-    margin: 25px 0;
-}
-.expertise h2,h3,h4 {
-    font-size: 35px;
-    font-weight: 200;
-}
-.expertise h2 {
-    color:  #e34f26;
-}
-.expertise h3 {
-    color:  #f7df1e;
-}
-.expertise h4 {
-    color: rgb(255, 255, 255);
-}
-.expertise p {
-    font-size: 100%;
-    color: #ffffff;
-    max-width: 40vw;
-}
-
-/*------ End ------*/
 
 /*------ Projects Section ------*/
 
@@ -190,15 +149,12 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    min-height: 150vh;
-    background-color: #FAFAFA;
+    min-height: 100vh;
+    background-color: #ffffff;
 }
 .projects h1 {
     font-size: 75px;
-    color: #fff; 
-    width: 40vw;
-    background-color: #1890c0;
-    padding-left: 1.5%;
+    color: #1890c0; 
 }
 .projects p {
     font-size: 22px;
@@ -208,6 +164,7 @@ header p {
 .projects h2 {
     font-weight: 400;
     font-size: 50px;
+    color: #183048;
 }
 .project-List {
     list-style: none;
@@ -224,18 +181,20 @@ header p {
     width: 350px;
     height: auto;
     margin-top: 50px;
-    background-color: #f2f2f2;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 2px #eaeaea;
-    color: #fff;
+    color: #183048;
+}
+.project-Card img {
+    width: 500px;
+    height: auto;
 }
 .project-Card ion-icon {
-    color: #fff;
+    color: #183048;
     font-size: 35px;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
@@ -263,39 +222,13 @@ header p {
     align-items: center;
     justify-content: space-around;
     height: 150px;
-    width: 35%;
-    margin: 0 32.5%;
+    width:  90%;
+    margin: 0 10%;
 }
 .card-Social ion-icon:hover {
     color: #008cba;
     text-decoration: none;
 }
-.onepage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.email {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ No\ Image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.react {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ SCP.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.react-native {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/img/Portfolio\ Projects\ Card\ -\ Rails.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.coming-soon {
-    border: solid 1px rgba(192, 192, 192, 0.5);
-}
+
 
 /*------ End ------*/
