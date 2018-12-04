@@ -44,6 +44,33 @@ body {
     flex-flow: column;
     justify-content: center;
 }
+.project-Item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 20vh;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    margin: 20px 0px;
+}
+.project-Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: inherit;
+}
+.project-Description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: auto;
+    padding: 0 20px;
+}
 /*------ End ------*/
 
 /*------ Headings & Paragraphs ------*/
@@ -61,8 +88,13 @@ p {
 a {
     text-decoration: none;
     font-weight: 400;
-    font-size: 100%;
+    font-size: 150%;
     line-height: 140%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 a:link {
     color: #fff;
@@ -80,6 +112,8 @@ a:active {
     color: #fff;
     text-decoration: none;
 }
+
+
 /*------ End ------*/
 
 /*------ Header Section  ------*/
@@ -131,7 +165,7 @@ header p {
 .about h1 {
     font-size: 300%;
     margin-bottom: 50px;
-    color: #1890c0; 
+    color: #1890c0;
 }
 .about p {
     font-size: 100%;
@@ -141,94 +175,3 @@ header p {
 /*------ End ------*/
 
 
-
-/*------ Projects Section ------*/
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    background-color: #ffffff;
-}
-.projects h1 {
-    font-size: 75px;
-    color: #1890c0; 
-}
-.projects p {
-    font-size: 22px;
-    width: 50vw;
-    color: #183048;
-}
-.projects h2 {
-    font-weight: 400;
-    font-size: 50px;
-    color: #183048;
-}
-.project-List {
-    list-style: none;
-    width: inherit;
-}
-.project-List li {
-    display: block;
-    float: left;
-    margin: 0px 15px;
-}
-.project-Card {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
-    color: #183048;
-}
-.project-Card img {
-    width: 500px;
-    height: auto;
-}
-.project-Card ion-icon {
-    color: #183048;
-    font-size: 35px;
-    transition: color 0.2s;
-    -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
-    -ms-transition: color 0.2s;
-    -o-transition: color 0.2s;
-}
-.card-Title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 100px;
-}
-.card-Description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    margin: 0 10px;
-}
-.card-Social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 150px;
-    width:  90%;
-    margin: 0 10%;
-}
-.card-Social ion-icon:hover {
-    color: #008cba;
-    text-decoration: none;
-}
-
-
-/*------ End ------*/
