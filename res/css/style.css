@@ -44,33 +44,6 @@ body {
     flex-flow: column;
     justify-content: center;
 }
-.project-Item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100vw;
-    min-height: 20vh;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
-    box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
-    margin: 20px 0px;
-}
-.project-Title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: inherit;
-}
-.project-Description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: auto;
-    padding: 0 20px;
-}
 /*------ End ------*/
 
 /*------ Headings & Paragraphs ------*/
@@ -160,7 +133,7 @@ header p {
     flex-flow: row wrap;
     max-width: 100vw;
     min-height: 100vh;
-    background-color: #FAFAFA;
+
 }
 .about h1 {
     font-size: 300%;
@@ -174,4 +147,48 @@ header p {
 
 /*------ End ------*/
 
-
+/*------ Project Section ------*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+.project-Item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 20vh;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
+    margin: 40px 0px;
+}
+.project-Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: inherit;
+}
+.project-Title h2 {
+    font-size: 175%;
+    font-weight: 300;
+}
+.project-Title P {
+    font-size: 75%;
+}
+.project-Description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: auto;
+    padding: 0 20px;
+}
