@@ -56,7 +56,8 @@ body {
 }
 .sub-heading {
     font-weight: 300;
-    font-size: 100%;
+    font-size: 85%;
+    width: 75%;
     color: #9b9fa2;
 }
 /*------ End ------*/
@@ -174,24 +175,30 @@ header h2 {
     color: #63c5ec;
     font-size: 250%;
 }
-.project-Item {
+.project-Card {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     max-width: 100vw;
     min-height: 20vh;
+    max-height: 40vh;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
     box-shadow: 2px 2px 5px 0px rgba(224,224,224,1);
     margin: 40px 0px;
     background-color: #fff;
 }
+.project-Container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    flex: 1;
+}
 .project-Title {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: inherit;
+    flex: 2;
 }
 .project-Title h2 {
     margin: 0;
@@ -204,26 +211,67 @@ header h2 {
 }
 .project-Links {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 .project-Links .logo {
     font-size: 25px;
 }
 .project-Description {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60vw;
-    height: auto;
-    padding: 0 20px;
+    flex: 3;
     font-size: 85%;
 }
 
 /*------ End ------*/
 
 /*------ Footer Section ------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 15vh;
+    background-color: #222222;
+}
+.footer-Container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.footer-Left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 3;
+}
+.footer-Left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    font-size: 75%;
+}
+.footer-Left li {
+    margin-right: 10px;
+}
+.footer-Left h2 {
+    font-size: 50%;
+}
+.footer-Right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+.footer-Right ion-icon {
+    font-size: 100%;
+}
+
 
 /*------ End ------*/
