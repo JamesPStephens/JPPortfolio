@@ -106,7 +106,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.829)), url('../css/img/Background.jpg');
+    background-image: linear-gradient(#00000000, #000000d3), url('../img/close-up-code-coding-160107.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -191,7 +191,7 @@ header h2 {
     align-items: center;
     max-width: 100vw;
     min-height: 100vh;
-    background-color: #383e40;
+    background-color: #FAFAFA;
 }
 .projects h1 {
     color: #63c5ec;
@@ -206,6 +206,11 @@ header h2 {
     font-size: 1rem;
     font-weight: 200;
 }
+.projects-Carousel {
+    -webkit-box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
+}
 #BH {
     color: #00c9ff;
 }
@@ -218,7 +223,7 @@ header h2 {
 #S {
     color: #141414;
 }
-.carosuel-item {
+/* .carosuel-item {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -227,7 +232,7 @@ header h2 {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-}
+} */
 
 /*------ End ------*/
 
@@ -263,7 +268,9 @@ footer {
     margin-right: 10px;
 }
 .footer-Left h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #ffffff;
 }
 .footer-Right {
     display: flex;
