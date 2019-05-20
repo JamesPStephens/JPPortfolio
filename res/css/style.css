@@ -49,7 +49,7 @@ body {
     display: block;
     width: auto;
     height: 1px;
-    width: 75%;
+    width: 100%;
     background-color: #d7d9dd;
     margin-bottom: 25px;
 }
@@ -106,7 +106,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(#00000000, #000000d3), url('../img/close-up-code-coding-160107.jpg');
+    background-image: linear-gradient(#00000000, #000000d3), url('../css//img/Background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,34 +206,39 @@ header h2 {
     font-size: 1rem;
     font-weight: 200;
 }
-.projects-Carousel {
-    -webkit-box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
-    box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.2);
-}
 #BH {
     color: #00c9ff;
+}
+#BHLine {
+    background-color: #00c9ff;
 }
 #YO {
     color: #ffcc00;
 }
+#YOLine {
+    background-color: #ffcc00;
+}
 #SPG {
     color: #2ecc71;
 }
-#S {
-    color: #141414;
+#SPGLine {
+    background-color: #2ecc71;
 }
-/* .carosuel-item {
+.carosuel-item {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+}
+.portfolio-Img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-} */
-
+}
 /*------ End ------*/
 
 /*------ Footer Section ------*/
