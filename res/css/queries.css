@@ -1,3 +1,12 @@
+@media only screen and (min-width: 0px) and (max-width: 319px){
+  body,
+  html {
+    font-size: 9px;
+  }
+  .about p {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 479px){
   body,
   html {
@@ -7,7 +16,6 @@
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 767px){
   body,
   html {
@@ -17,7 +25,6 @@
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px){
   body,
   html {
