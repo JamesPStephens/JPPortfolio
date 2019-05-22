@@ -147,6 +147,41 @@ header h2 {
     font-weight: 200;
     color: #fff;
 }
+header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    font-size: 1rem;
+}
+header li {
+    margin-right: 10px;
+}
+header a:link {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
+header a:visited {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
+header a:hover {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
+header a:active {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
 /*------ End ------*/
 
 /*------ About Section ------*/
@@ -170,7 +205,7 @@ header h2 {
     min-height: 100vh;
     padding: 5% 0%;
 }
-.about h1 {
+.about h2 {
     color: #63c5ec;
     font-size: 3rem;
 }
@@ -233,12 +268,11 @@ header h2 {
     min-height: 100vh;
     background-color: #FAFAFA;
 }
-.projects h1 {
-    color: #63c5ec;
+.projects h2 {
     font-size: 2rem;
     font-weight: 400;
 }
-.projects h2 {
+.projects h3 {
     font-size: 1.5rem;
     font-weight: 300;
 }
